@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felhasználói Adatok</title>
+    <link rel="stylesheet" href="kurz.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kurzusok és Diákok Kezelése</h1>
+            <div>
+                <button onclick="kurzus()">Kurzusok</button>
+                <button onclick="tanulo()">Tanulók</button>
+            </div>
+        </header>
+
+        <div id="CardContainer"></div>
+
+
+        <div>
+            <button onclick="ujkurzus()">Új Kurzus</button>
+            <button onclick="ujtanulo()">Új Tanuló</button>
+        </div>
+
+        <!-- Felugró ablak a felhasználói inputokhoz -->
+        <div id="ujadatok" style="display:none;">
+            <h2>Új elem hozzáadása</h2>
+            <input type="text" id="ujnev" placeholder="Név" required>
+            <button onclick="mentes()">Mentés</button>
+            <button onclick="megse()">Mégsem</button>
+        </div>
+
+    </div>
+
+    <script src="kurz.js"></script>
+</body>
+</html>

@@ -1,8 +1,8 @@
 const alapUrl = "https://vvri.pythonanywhere.com/api/courses";
 
-let KorT = ""; // "courses" or "students"
+let KorT = ""; //courses, students
 
-// Fetch and display courses or students based on selection
+
 function fetchItems() {
     let url = alapUrl;
     if (KorT == "students") {
